@@ -52,7 +52,7 @@ body {
 /*--------------Typography--------------------------------------*/
 p {
   text-align: left;
-  font-size: 11px;
+  font-size: 14px;
   line-height: 24px;
   padding-bottom: 10px;
   font-weight: 500;
@@ -366,7 +366,7 @@ blockquote:before {
   right: -1px;
   bottom: 0;
   top: 100%;
-  background: #b30505;
+  background: #1c9025;
   z-index: 1;
   transition: all 0.3s ease-in-out;
 }
@@ -735,8 +735,8 @@ blockquote:before {
 .nav-holder nav li a {
   float: left;
   padding: 5px 11px;
-  color: #b30505;
-  font-size: 11px;
+  color: #1c9025;
+  font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 25px;
@@ -745,7 +745,7 @@ blockquote:before {
 }
 .nav-holder nav li a.act-link,
 .nav-holder nav li a:hover {
-  color: #999;
+  color: #ed0808;
 }
 .nav-holder nav li a i {
   padding-left: 10px;
@@ -1792,7 +1792,7 @@ section {
   margin-bottom: 10px;
   padding-left: 20px;
   position: relative;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 600;
 }
 .footer-list li:before {
@@ -2671,9 +2671,18 @@ section {
   border-radius: 4px;
 }
 .single-post-content_text p {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 400;
   color: #000;
+}
+.single-post-content_text p,
+.single-post-content_text h1,
+.single-post-content_text h2,
+.single-post-content_text h3,
+.single-post-content_text h4,
+.single-post-content_text h5,
+.single-post-content_text h6 {
+  text-align: left;
 }
 .single-post-content_column {
   position: absolute;
@@ -5344,7 +5353,7 @@ h4.cart-title span {
     width: 300px;
     z-index: 50;
     padding: 15px 10px;
-    background: #b30505;
+    background: #1c9025;
     visibility: hidden;
     opacity: 0;
     -webkit-transition: all 0.4s ease-in-out;
