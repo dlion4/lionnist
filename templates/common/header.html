@@ -118,7 +118,7 @@
               class="search-submit"
               id="submit_btn"
             >
-              <i class="fa fa-search transition">Search</i>
+              <i class="fa fa-search transition"></i>
             </button>
           </form>
         </div>
@@ -141,14 +141,6 @@
               <a href="{% url 'posts:home' %}" class="menu-home">Home</a>
             </li>
 
-            <li
-              id="menu-item-361"
-              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"
-            >
-              <a href="#" class="menu-pages"
-                >Pages<i class="fas fa-caret-down"></i
-              ></a>
-              <ul class="sub-menu">
                 <li
                   id="menu-item-422"
                   class="menu-item menu-item-type-post_type menu-item-object-page"
@@ -180,14 +172,7 @@
                     >Sponsorship</a
                   >
                 </li>
-                <li
-                  id="menu-item-421"
-                  class="menu-item menu-item-type-post_type menu-item-object-page"
-                >
-                  <a href="{% url 'contact' %}" class="menu-contacts"
-                    >Guest Post</a
-                  >
-                </li>
+                
                 <li
                   id="menu-item-421"
                   class="menu-item menu-item-type-post_type menu-item-object-page"
@@ -198,10 +183,12 @@
                 </li>
                 -->
                 <li
-                  id="menu-item-362"
-                  class="menu-item menu-item-type-taxonomy menu-item-object-category"
+                  id="menu-item-421"
+                  class="menu-item menu-item-type-post_type menu-item-object-page"
                 >
-                  <a href="#category">Categories</a>
+                  <a href="{% url 'contact' %}" class="menu-contacts"
+                    >Guest Post</a
+                  >
                 </li>
                 <li
                   id="menu-item-363"
@@ -215,7 +202,7 @@
                 >
                   <a href="#subscribe">Subscribe</a>
                 </li>
-              </ul>
+              
 
               {% for nav_lin in nav_categories %}
             </li>

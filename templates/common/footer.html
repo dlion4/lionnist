@@ -16,11 +16,11 @@
                   alt="logo"
               /></a>
               <p>
-                Lionnist is your go-to source for practical advice and tips on
-                markets, trading, forex, investing, saving, buying and selling,
-                and making money. We're here to simplify the complex world of
-                finance and empower you with the knowledge you need to navigate
-                it confidently.
+                Lionnist is your go-to source for practical advice and
+                suggestions markets, trading, forex, investing, saving, buying
+                and promoting, and earn profits. We are here to simplify a
+                complicated international situation of finance and empower you
+                with the expertise you need to navigate that confidently.
               </p>
               <!--
               <div class="footer-social fl-wrap">
@@ -61,13 +61,42 @@
         <!-- footer-widget -->
         <div class="col-md-2">
           <div class="footer-widget">
-            <div class="footer-widget-title">Categories</div>
+            <div class="footer-widget-title">Finance Posts</div>
             <div class="footer-widget-content">
               <div class="footer-list footer-box fl-wrap">
-                {% if footer_categories %}
+                <!--
+
+                  {% if footer_categories %}
+                  <ul>
+                    {% for footer_link in footer_categories %}
+                    <li><a href="#">{{footer_link.name }}</a></li>
+                    {% endfor %}
+                  </ul>
+                -->
+
+                {% endif %} {% if nav_categories %}
                 <ul>
-                  {% for footer_link in footer_categories %}
-                  <li><a href="#">{{footer_link.name }}</a></li>
+                  <li>
+                    <a href="#" class="act-category">All Posts</a>
+                  </li>
+                  {% for category in nav_categories %}
+                  <li>
+                    <a href="#"><i class=""></i> {{category.name|upper}}</a>
+
+                    <!--level 2 -->
+                    {% if category.get_sub_categories %}
+                    <ul>
+                      {% for sub in category.get_sub_categories %}
+                      <li>
+                        <a href="{{sub.get_absolute_url}}"
+                          >{{sub.name|upper}}</a
+                        >
+                      </li>
+                      {% endfor %}
+                    </ul>
+                    {% endif %}
+                    <!--level 2 end -->
+                  </li>
                   {% endfor %}
                 </ul>
                 {% endif %}
@@ -84,14 +113,15 @@
               <div class="footer-list footer-box fl-wrap">
                 <ul>
                   <!--<li><a href="{% url 'contact' %}">Premium</a></li>
-                  <li><a href="{% url 'contact' %}">Advertisment</a></li>
-                  <li><a href="{% url 'contact' %}">Sponsorship</a></li>
                   -->
+                  <li><a href="{% url 'contact' %}">Guest Post</a></li>
+                  <li><a href="{% url 'disclaimer' %}">Disclaimer</a></li>
                   <li><a href="{% url 'privacy' %}">Privacy Policy</a></li>
                   <li>
                     <a href="{% url 'terms-and-condition'%}"
                       >Terms & Conditions</a
                     >
+                    <!---->
                   </li>
                 </ul>
               </div>
@@ -107,8 +137,8 @@
               <div class="subcribe-form fl-wrap">
                 <p>
                   Tailored financial updates for you. Subscribe to our
-                  newsletter and get personalized updates based on your
-                  interests.
+                  e-newsletter and get personalised updates based to your
+                  pursuits.
                 </p>
                 <form
                   id="subscribe"

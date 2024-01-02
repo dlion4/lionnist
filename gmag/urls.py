@@ -16,6 +16,7 @@ urlpatterns = [
     path("about-us/", views.AboutUs.as_view(), name="about"),
     path("contact-us/", views.ContactUs.as_view(), name="contact"),
     path("privacy/", views.Privacy.as_view(), name="privacy"),
+    path("disclaimer/", views.Disclaimer.as_view(), name="disclaimer"),
     path(
         "terms-and-condition/",
         views.TermsCondition.as_view(),

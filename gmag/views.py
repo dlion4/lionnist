@@ -40,6 +40,9 @@ class ContactUs(generic.TemplateView):
 class Privacy(generic.TemplateView):
     template_name = "pages/privacy.html"
 
+class Disclaimer(generic.TemplateView):
+    template_name = "pages/disclaimer.html"
+
 
 class TermsCondition(generic.TemplateView):
     template_name = "pages/terms-and-condition.html"
