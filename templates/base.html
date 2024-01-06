@@ -134,8 +134,8 @@
       <div class="cookie-info-bar">
         <div class="container">
           <div class="cookie-info-bar_title">
-            <i class="fal fa-cookie"></i>Our site uses cookies to improve our
-            services. Learn more about our use of cookies:
+            <i class="fal fa-cookie"></i>We use cookies to improve our services
+            and performance. Learn more about our use of cookies:
             <a href="{% url 'privacy' %}">Cookie policy</a>
           </div>
           <a href="#" class="sicb_btn color-bg">Accept</a>
@@ -145,44 +145,42 @@
       <!-- cookie-info-bar end -->
 
       <script>
-        setTimeout(function () {
-          // Check if the user has already seen the notification by looking for a cookie
-          function hasCookieConsent() {
-            return document.cookie.indexOf("cookieConsent=true") !== -1;
+        // Check if the user has already seen the notification by looking for a cookie
+        function hasCookieConsent() {
+          return document.cookie.indexOf("cookieConsent=true") !== -1;
+        }
+
+        // Function to set a cookie that indicates the user has accepted the cookies
+        function setCookieConsent() {
+          var expirationDate = new Date();
+          expirationDate.setFullYear(expirationDate.getFullYear() + 5); // Cookie valid for 1 year
+          document.cookie =
+            "cookieConsent=true; expires=" +
+            expirationDate.toUTCString() +
+            "; path=/";
+        }
+
+        // Show the cookie notification only if the user hasn't seen it before
+        if (!hasCookieConsent()) {
+          var cookieInfoBar = document.getElementById("cookie-info-bar");
+          var acceptCookieButton = document.getElementById("accept-cookie");
+          var rejectCookieButton = document.getElementById("reject-cookie");
+
+          if (cookieInfoBar && acceptCookieButton && rejectCookieButton) {
+            cookieInfoBar.style.display = "block";
+
+            acceptCookieButton.addEventListener("click", function () {
+              setCookieConsent();
+              cookieInfoBar.style.display = "none";
+              // You can add code here to handle cookie acceptance
+            });
+
+            rejectCookieButton.addEventListener("click", function () {
+              cookieInfoBar.style.display = "none";
+              // You can add code here to handle cookie rejection
+            });
           }
-
-          // Function to set a cookie that indicates the user has accepted the cookies
-          function setCookieConsent() {
-            var expirationDate = new Date();
-            expirationDate.setFullYear(expirationDate.getFullYear() + 5); // Cookie valid for 1 year
-            document.cookie =
-              "cookieConsent=true; expires=" +
-              expirationDate.toUTCString() +
-              "; path=/";
-          }
-
-          // Show the cookie notification only if the user hasn't seen it before
-          if (!hasCookieConsent()) {
-            var cookieInfoBar = document.getElementById("cookie-info-bar");
-            var acceptCookieButton = document.getElementById("accept-cookie");
-            var rejectCookieButton = document.getElementById("reject-cookie");
-
-            if (cookieInfoBar && acceptCookieButton && rejectCookieButton) {
-              cookieInfoBar.style.display = "block";
-
-              acceptCookieButton.addEventListener("click", function () {
-                setCookieConsent();
-                cookieInfoBar.style.display = "none";
-                // You can add code here to handle cookie acceptance
-              });
-
-              rejectCookieButton.addEventListener("click", function () {
-                cookieInfoBar.style.display = "none";
-                // You can add code here to handle cookie rejection
-              });
-            }
-          }
-        }, 8000);
+        }
       </script>
     </div>
     <!--=============== scripts  ===============-->
@@ -193,16 +191,14 @@
     <script src="{% static 'js/contextmenu.js' %}"></script>
 
     <script>
-      setTimeout(function () {
-        const isNoticeSeen = window.localStorage["noticeSeen"] === "true";
-        if (isNoticeSeen) {
-          $(".cookie-info-bar").css("display", "none");
-        } else {
-          $(".sicb_btn").click(function () {
-            window.localStorage["noticeSeen"] = true;
-          });
-        }
-      }, 10000);
+      const isNoticeSeen = window.localStorage["noticeSeen"] === "true";
+      if (isNoticeSeen) {
+        $(".cookie-info-bar").css("display", "none");
+      } else {
+        $(".sicb_btn").click(function () {
+          window.localStorage["noticeSeen"] = true;
+        });
+      }
     </script>
 
     <script>
@@ -226,6 +222,7 @@
     </script>
 
     <!--page reload-->
+    <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     <script>
       function reloadPagePeriodically() {
         setTimeout(function () {
@@ -234,7 +231,7 @@
       }
       reloadPagePeriodically();
     </script>
-
+  -->
     <!---->
     <!-- Google Tag Manager (noscript) -->
     <noscript
