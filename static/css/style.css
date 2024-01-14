@@ -110,12 +110,20 @@ blockquote:before {
   position: relative;
   z-index: 2;
 }
+.contentx {
+  width: 100%;
+  position: relative;
+  z-index: 13;
+  background: #fff;
+  float: left;
+}
 .content {
   width: 100%;
   position: relative;
   z-index: 13;
   background: #fff;
   float: left;
+  margin-top: -103px;
 }
 .full-height {
   height: 100%;
@@ -3331,7 +3339,7 @@ section {
 
 .categories_nav-inner .submen-dec:before {
   font-family: Font Awesome\5 Pro;
-  content: "\f0da";
+  
   position: absolute;
   right: 20px;
   width: 10px;
@@ -3501,7 +3509,7 @@ section {
 }
 .spb-categories_counter:before {
   font-family: Font Awesome\5 Pro;
-  content: "\f0da";
+  
   position: absolute;
   width: 36px;
   height: 36px;
@@ -5316,8 +5324,7 @@ h4.cart-title span {
     right: 18px;
     top: 12px;
   }
-  .menusb li i:before {
-    content: "\f0da";
+  
   }
   .menusb a {
     float: left;
