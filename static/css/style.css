@@ -110,12 +110,20 @@ blockquote:before {
   position: relative;
   z-index: 2;
 }
+.contentx {
+  width: 100%;
+  position: relative;
+  z-index: 13;
+  background: #fff;
+  float: left;
+}
 .content {
   width: 100%;
   position: relative;
   z-index: 13;
   background: #fff;
   float: left;
+  margin-top: -103px;
 }
 .full-height {
   height: 100%;
@@ -1192,15 +1200,7 @@ section {
   width: 70px;
   height: 1px;
 }
-.sect_dec:after {
-  font-family: Font Awesome\5 Pro;
-  content: "\f0d7";
-  position: absolute;
-  right: 20px;
-  top: 30px;
-  font-weight: 900;
-  font-size: 16px;
-}
+
 .section-title h4 {
   text-align: left;
   color: #666;
@@ -1343,18 +1343,7 @@ section {
 .breadcrumbs-header_url span {
   padding-left: 14px;
 }
-.breadcrumbs-list a:before,
-.breadcrumbs-header_url a:before,
-.breadcrumbs-list span:before,
-.breadcrumbs-header_url span:before {
-  font-family: Font Awesome\5 Pro;
-  content: "\f0da";
-  position: absolute;
-  left: 0;
-  top: 2px;
-  font-size: 11px;
-  transition: all 200ms linear;
-}
+
 .scroll-down-wrap {
   position: absolute;
   right: 0;
@@ -1795,15 +1784,7 @@ section {
   font-size: 15px;
   font-weight: 600;
 }
-.footer-list li:before {
-  font-family: Font Awesome\5 Pro;
-  content: "\f0da";
-  position: absolute;
-  left: 0;
-  top: 5px;
-  font-size: 11px;
-  transition: all 200ms linear;
-}
+
 .footer-list li:hover:before {
   left: 4px;
 }
@@ -3346,10 +3327,7 @@ section {
   background: #b30505;
   border-color: transparent;
 }
-.categories_nav-inner a i {
-  margin-right: 10px;
-  font-size: 13px;
-}
+
 .categories_nav-inner a.back {
   margin-bottom: 10px;
 }
@@ -3358,14 +3336,10 @@ section {
   color: #fff;
   padding-left: 20px;
 }
-.categories_nav-inner a.back:before {
-  font-family: Font Awesome\5 Pro;
-  content: "\f104";
-  color: #fff;
-}
+
 .categories_nav-inner .submen-dec:before {
   font-family: Font Awesome\5 Pro;
-  content: "\f0da";
+  
   position: absolute;
   right: 20px;
   width: 10px;
@@ -3535,7 +3509,7 @@ section {
 }
 .spb-categories_counter:before {
   font-family: Font Awesome\5 Pro;
-  content: "\f0da";
+  
   position: absolute;
   width: 36px;
   height: 36px;
@@ -3701,47 +3675,7 @@ section {
   position: relative;
   display: block;
 }
-.post-widget-item-media a:before,
-.list-post-media a:before,
-.grid-post-media a.gpm_link:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  z-index: 2;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: all 200ms linear;
-}
-.post-widget-item-media a:after,
-.list-post-media a:after,
-.grid-post-media a.gpm_link:after {
-  font-family: Font Awesome\5 Pro;
-  content: "\f178";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 10px;
-  height: 10px;
-  line-height: 10px;
-  margin: -5px 0 0 -5px;
-  z-index: 3;
-  color: #fff;
-  opacity: 0;
-  transition: all 200ms linear;
-}
-.list-post-media a:after,
-.grid-post-media a.gpm_link:after {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  margin: -20px 0 0 -20px;
-  border-radius: 50%;
-  font-size: 10px;
-  box-shadow: 0px 0px 0px 4px rgb(255 255 255 / 40%);
-}
+
 .post-widget-item-media a:hover:before,
 .post-widget-item-media a:hover:after,
 .list-post-media a:hover:before,
@@ -5390,8 +5324,7 @@ h4.cart-title span {
     right: 18px;
     top: 12px;
   }
-  .menusb li i:before {
-    content: "\f0da";
+  
   }
   .menusb a {
     float: left;

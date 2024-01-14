@@ -52,7 +52,11 @@ body {
 /*--------------Typography--------------------------------------*/
 p {
   text-align: left;
+<<<<<<< HEAD
   font-size: 11px;
+=======
+  font-size: 14px;
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
   line-height: 24px;
   padding-bottom: 10px;
   font-weight: 500;
@@ -366,7 +370,11 @@ blockquote:before {
   right: -1px;
   bottom: 0;
   top: 100%;
+<<<<<<< HEAD
   background: #b30505;
+=======
+  background: #1c9025;
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
   z-index: 1;
   transition: all 0.3s ease-in-out;
 }
@@ -735,8 +743,13 @@ blockquote:before {
 .nav-holder nav li a {
   float: left;
   padding: 5px 11px;
+<<<<<<< HEAD
   color: #b30505;
   font-size: 11px;
+=======
+  color: #1c9025;
+  font-size: 14px;
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
   font-weight: 700;
   text-transform: uppercase;
   line-height: 25px;
@@ -745,7 +758,11 @@ blockquote:before {
 }
 .nav-holder nav li a.act-link,
 .nav-holder nav li a:hover {
+<<<<<<< HEAD
   color: #999;
+=======
+  color: #ed0808;
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
 }
 .nav-holder nav li a i {
   padding-left: 10px;
@@ -1192,6 +1209,7 @@ section {
   width: 70px;
   height: 1px;
 }
+<<<<<<< HEAD
 .sect_dec:after {
   font-family: Font Awesome\5 Pro;
   content: "\f0d7";
@@ -1201,6 +1219,9 @@ section {
   font-weight: 900;
   font-size: 16px;
 }
+=======
+
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
 .section-title h4 {
   text-align: left;
   color: #666;
@@ -1343,6 +1364,7 @@ section {
 .breadcrumbs-header_url span {
   padding-left: 14px;
 }
+<<<<<<< HEAD
 .breadcrumbs-list a:before,
 .breadcrumbs-header_url a:before,
 .breadcrumbs-list span:before,
@@ -1355,6 +1377,9 @@ section {
   font-size: 11px;
   transition: all 200ms linear;
 }
+=======
+
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
 .scroll-down-wrap {
   position: absolute;
   right: 0;
@@ -1792,6 +1817,7 @@ section {
   margin-bottom: 10px;
   padding-left: 20px;
   position: relative;
+<<<<<<< HEAD
   font-size: 12px;
   font-weight: 600;
 }
@@ -1804,6 +1830,12 @@ section {
   font-size: 11px;
   transition: all 200ms linear;
 }
+=======
+  font-size: 15px;
+  font-weight: 600;
+}
+
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
 .footer-list li:hover:before {
   left: 4px;
 }
@@ -2671,10 +2703,26 @@ section {
   border-radius: 4px;
 }
 .single-post-content_text p {
+<<<<<<< HEAD
   font-size: 12px;
   font-weight: 400;
   color: #000;
 }
+=======
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+}
+.single-post-content_text p,
+.single-post-content_text h1,
+.single-post-content_text h2,
+.single-post-content_text h3,
+.single-post-content_text h4,
+.single-post-content_text h5,
+.single-post-content_text h6 {
+  text-align: left;
+}
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
 .single-post-content_column {
   position: absolute;
   top: 0;
@@ -3337,10 +3385,14 @@ section {
   background: #b30505;
   border-color: transparent;
 }
+<<<<<<< HEAD
 .categories_nav-inner a i {
   margin-right: 10px;
   font-size: 13px;
 }
+=======
+
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
 .categories_nav-inner a.back {
   margin-bottom: 10px;
 }
@@ -3349,6 +3401,7 @@ section {
   color: #fff;
   padding-left: 20px;
 }
+<<<<<<< HEAD
 .categories_nav-inner a.back:before {
   font-family: Font Awesome\5 Pro;
   content: "\f104";
@@ -3357,6 +3410,11 @@ section {
 .categories_nav-inner .submen-dec:before {
   font-family: Font Awesome\5 Pro;
   content: "\f0da";
+=======
+
+.categories_nav-inner .submen-dec:before {
+  font-family: Font Awesome\5 Pro;
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
   position: absolute;
   right: 20px;
   width: 10px;
@@ -3526,7 +3584,11 @@ section {
 }
 .spb-categories_counter:before {
   font-family: Font Awesome\5 Pro;
+<<<<<<< HEAD
   content: "\f0da";
+=======
+
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
   position: absolute;
   width: 36px;
   height: 36px;
@@ -3692,6 +3754,7 @@ section {
   position: relative;
   display: block;
 }
+<<<<<<< HEAD
 .post-widget-item-media a:before,
 .list-post-media a:before,
 .grid-post-media a.gpm_link:before {
@@ -3733,6 +3796,9 @@ section {
   font-size: 10px;
   box-shadow: 0px 0px 0px 4px rgb(255 255 255 / 40%);
 }
+=======
+
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
 .post-widget-item-media a:hover:before,
 .post-widget-item-media a:hover:after,
 .list-post-media a:hover:before,
@@ -5344,7 +5410,11 @@ h4.cart-title span {
     width: 300px;
     z-index: 50;
     padding: 15px 10px;
+<<<<<<< HEAD
     background: #b30505;
+=======
+    background: #1c9025;
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
     visibility: hidden;
     opacity: 0;
     -webkit-transition: all 0.4s ease-in-out;
@@ -5381,9 +5451,13 @@ h4.cart-title span {
     right: 18px;
     top: 12px;
   }
+<<<<<<< HEAD
   .menusb li i:before {
     content: "\f0da";
   }
+=======
+
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
   .menusb a {
     float: left;
     width: 100%;

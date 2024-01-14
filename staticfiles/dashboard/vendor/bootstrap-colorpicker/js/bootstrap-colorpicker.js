@@ -206,7 +206,11 @@
         return 0;
       }
       if (val.toLowerCase !== undefined) {
+<<<<<<< HEAD
         if (val.match(/^/./)) {
+=======
+        if (val.match(/^\./)) {
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
           val = "0" + val;
         }
         return Math.ceil(parseFloat(val) * 100) / 100;
@@ -218,7 +222,11 @@
         return false;
       }
       strVal = strVal.toLowerCase().trim();
+<<<<<<< HEAD
       return (strVal === 'transparent') || (strVal.match(/#?00000000/)) || (strVal.match(/(rgba|hsla)/(0,0,0,0?/.?0/)/));
+=======
+      return (strVal === 'transparent') || (strVal.match(/#?00000000/)) || (strVal.match(/(rgba|hsla)\(0,0,0,0?\.?0\)/));
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
     },
     rgbaIsTransparent: function(rgba) {
       return ((rgba.r === 0) && (rgba.g === 0) && (rgba.b === 0) && (rgba.a === 0));
@@ -456,7 +464,11 @@
     // from John Resig color plugin
     // https://github.com/jquery/jquery-color/
     stringParsers: [{
+<<<<<<< HEAD
       re: /rgb/(/s*(/d{1,3})/s*,/s*(/d{1,3})/s*,/s*(/d{1,3})/s*?/)/,
+=======
+      re: /rgb\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*?\)/,
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
       format: 'rgb',
       parse: function(execResult) {
         return [
@@ -467,7 +479,11 @@
         ];
       }
     }, {
+<<<<<<< HEAD
       re: /rgb/(/s*(/d*(?:/./d+)?)/%/s*,/s*(/d*(?:/./d+)?)/%/s*,/s*(/d*(?:/./d+)?)/%/s*?/)/,
+=======
+      re: /rgb\(\s*(\d*(?:\.\d+)?)\%\s*,\s*(\d*(?:\.\d+)?)\%\s*,\s*(\d*(?:\.\d+)?)\%\s*?\)/,
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
       format: 'rgb',
       parse: function(execResult) {
         return [
@@ -478,7 +494,11 @@
         ];
       }
     }, {
+<<<<<<< HEAD
       re: /rgba/(/s*(/d{1,3})/s*,/s*(/d{1,3})/s*,/s*(/d{1,3})/s*(?:,/s*(/d*(?:/./d+)?)/s*)?/)/,
+=======
+      re: /rgba\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*(?:,\s*(\d*(?:\.\d+)?)\s*)?\)/,
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
       format: 'rgba',
       parse: function(execResult) {
         return [
@@ -489,7 +509,11 @@
         ];
       }
     }, {
+<<<<<<< HEAD
       re: /rgba/(/s*(/d*(?:/./d+)?)/%/s*,/s*(/d*(?:/./d+)?)/%/s*,/s*(/d*(?:/./d+)?)/%/s*(?:,/s*(/d*(?:/./d+)?)/s*)?/)/,
+=======
+      re: /rgba\(\s*(\d*(?:\.\d+)?)\%\s*,\s*(\d*(?:\.\d+)?)\%\s*,\s*(\d*(?:\.\d+)?)\%\s*(?:,\s*(\d*(?:\.\d+)?)\s*)?\)/,
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
       format: 'rgba',
       parse: function(execResult) {
         return [
@@ -500,7 +524,11 @@
         ];
       }
     }, {
+<<<<<<< HEAD
       re: /hsl/(/s*(/d*(?:/./d+)?)/s*,/s*(/d*(?:/./d+)?)/%/s*,/s*(/d*(?:/./d+)?)/%/s*?/)/,
+=======
+      re: /hsl\(\s*(\d*(?:\.\d+)?)\s*,\s*(\d*(?:\.\d+)?)\%\s*,\s*(\d*(?:\.\d+)?)\%\s*?\)/,
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
       format: 'hsl',
       parse: function(execResult) {
         return [
@@ -511,7 +539,11 @@
         ];
       }
     }, {
+<<<<<<< HEAD
       re: /hsla/(/s*(/d*(?:/./d+)?)/s*,/s*(/d*(?:/./d+)?)/%/s*,/s*(/d*(?:/./d+)?)/%/s*(?:,/s*(/d*(?:/./d+)?)/s*)?/)/,
+=======
+      re: /hsla\(\s*(\d*(?:\.\d+)?)\s*,\s*(\d*(?:\.\d+)?)\%\s*,\s*(\d*(?:\.\d+)?)\%\s*(?:,\s*(\d*(?:\.\d+)?)\s*)?\)/,
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
       format: 'hsla',
       parse: function(execResult) {
         return [

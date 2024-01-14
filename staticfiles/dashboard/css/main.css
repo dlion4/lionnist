@@ -2155,7 +2155,11 @@ body {
   background-color: #f4f7f9;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
+<<<<<<< HEAD
   color: #5a5a5a;
+=======
+  color: #b30505;
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -2466,7 +2470,11 @@ ul.choose-skin li div,
 .nav.nav-tabs > li.active > a:hover,
 .nav.nav-tabs > li.active > a:focus {
   background-color: #f4f7f6;
+<<<<<<< HEAD
   color: #5a5a5a;
+=======
+  color: #b30505;
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
 }
 .nav.nav-tabs > li > a {
   color: inherit;
@@ -2520,7 +2528,11 @@ ul.choose-skin li div,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   background-color: #efefef;
+<<<<<<< HEAD
   color: #5a5a5a;
+=======
+  color: #b30505;
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
 }
 .nav-pills > li > a {
   color: inherit;
@@ -2529,7 +2541,11 @@ ul.choose-skin li div,
 .nav-tabs-colored > li.active > a:hover,
 .nav-tabs-colored > li.active > a:focus {
   background-color: #f5f5f5;
+<<<<<<< HEAD
   color: #5a5a5a;
+=======
+  color: #b30505;
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
 }
 .badge {
   font-weight: 400;
@@ -2926,7 +2942,11 @@ html.fullscreen-bg #wrapper {
 .dropdown-menu > li > a,
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
+<<<<<<< HEAD
   color: #5a5a5a;
+=======
+  color: #b30505;
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -4126,6 +4146,7 @@ select.form-control:not([size]):not([multiple]) {
   filter: alpha(opacity=100);
 }
 .tooltip.left .tooltip-arrow {
+<<<<<<< HEAD
   border-left-color: #5a5a5a;
 }
 .tooltip.right .tooltip-arrow {
@@ -4136,6 +4157,18 @@ select.form-control:not([size]):not([multiple]) {
 }
 .tooltip.bottom .tooltip-arrow {
   border-bottom-color: #5a5a5a;
+=======
+  border-left-color: #b30505;
+}
+.tooltip.right .tooltip-arrow {
+  border-right-color: #b30505;
+}
+.tooltip.top .tooltip-arrow {
+  border-top-color: #b30505;
+}
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #b30505;
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
 }
 .popover {
   -moz-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.05);
@@ -4146,7 +4179,11 @@ select.form-control:not([size]):not([multiple]) {
 }
 .popover-title {
   font-weight: 600;
+<<<<<<< HEAD
   color: #5a5a5a;
+=======
+  color: #b30505;
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
   background-color: #f5f5f5;
 }
 .panel-group .panel .panel-heading {
@@ -4326,10 +4363,17 @@ select.form-control:not([size]):not([multiple]) {
 #jqstooltip {
   background-color: #fff;
   border-color: #ddd;
+<<<<<<< HEAD
   color: #5a5a5a;
 }
 #jqstooltip .jqsfield {
   color: #5a5a5a;
+=======
+  color: #b30505;
+}
+#jqstooltip .jqsfield {
+  color: #b30505;
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
 }
 .ct-chart {
   position: relative;
@@ -4514,19 +4558,31 @@ select.form-control:not([size]):not([multiple]) {
   -moz-border-radius: 3px;
   border-radius: 3px;
   min-width: 3.5em;
+<<<<<<< HEAD
   background: #5a5a5a;
+=======
+  background: #b30505;
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
   color: #fff;
 }
 .chartist-tooltip:before {
   margin-left: -8px;
   border-width: 8px;
+<<<<<<< HEAD
   border-top-color: #5a5a5a;
+=======
+  border-top-color: #b30505;
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
 }
 .ct-axis-title {
   fill: #9a9a9a;
 }
 .ct-label {
+<<<<<<< HEAD
   color: #5a5a5a;
+=======
+  color: #b30505;
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
 }
 .ct-legend {
   position: relative;
@@ -4828,7 +4884,11 @@ select.form-control:not([size]):not([multiple]) {
   color: #2ebd59 !important;
 }
 .squarespace-color {
+<<<<<<< HEAD
   color: #b30505 !important;
+=======
+  color: #b30505; !important;
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
 }
 .stackoverflow-color {
   color: #fe7a15 !important;
@@ -5342,7 +5402,11 @@ select.form-control:not([size]):not([multiple]) {
   background-color: #29a84f !important;
 }
 .squarespace-bg {
+<<<<<<< HEAD
   background-color: #b30505 !important;
+=======
+  background-color: #b30505; !important;
+>>>>>>> b2ad3ea999fa3f91ee8f0e69faeb07ab58635610
 }
 .squarespace-bg:hover,
 .squarespace-bg:focus {
