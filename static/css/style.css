@@ -31,9 +31,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  color: #b30505;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
   background: #fff;
   min-height: 100vh;
   scroll-behavior: smooth;
@@ -5207,8 +5207,6 @@ h4.cart-title span {
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
 }
 .about-img-hotifer:before {
-  font-family: Font Awesome\5 Pro;
-  content: "\f10e";
   bottom: 30px;
   right: 20px;
   position: absolute;
@@ -5217,7 +5215,7 @@ h4.cart-title span {
   font-weight: bold;
 }
 .about-wrap p {
-  font-size: 12px;
+  font-size: 14px;
 }
 .about-img-hotifer p {
   color: #fff;

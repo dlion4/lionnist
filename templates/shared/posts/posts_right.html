@@ -47,17 +47,45 @@
     <!-- box-widget -->
     {% if side_categories %}
     <div class="box-widget fl-wrap">
-      <div class="widget-title">Categories</div>
+      <div class="widget-title">Categories Posts</div>
       <div class="box-widget-content">
         <ul class="cat-wid-list">
           {% for category in side_categories %}
-          <li><a href="#">{{category.name|upper}}</a><span>20+</span></li>
+          <li><a href="#">{{category.name|upper}}</a><span>77+</span></li>
           {% endfor %}
         </ul>
       </div>
     </div>
     {% endif %}
+
+    
+ {% if category.get_sub_categories %}
+  <div class="box-widget fl-wrap">
+    <div class="widget-title">Sub Categories</div>
+    <div class="box-widget-content">
+      <!-- Level 2 -->
+      <ul class="cat-wid-list">
+        {% for sub in category.get_sub_categories %}
+          <li>
+            <a href="{{ sub.get_absolute_url }}">
+              {{ sub.name|title }}
+            </a>
+            <span>20+</span>
+          </li>
+        {% endfor %}
+      </ul>
+      <!-- Level 2 end -->
+    </div>
+  </div>
+{% endif %}
+
+
+    
     <!-- box-widget  end -->
+
+
+    
+
     <!-- box-widget -->
     {% if lim_tags %}
     <div class="box-widget fl-wrap">
@@ -72,6 +100,7 @@
     </div>
     {% endif %}
     <!-- box-widget  end -->
+    
     <!-- box-widget -->
     <!--
     <div class="box-widget fl-wrap">
